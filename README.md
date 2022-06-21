@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/major/cis-rhel-ansible.svg?branch=master)](https://travis-ci.org/major/cis-rhel-ansible)
 
-This is an ansible playbook for automatically applying CIS Security Benchmarks to a system running Ubuntu 20.04 LTS and 22.04 LTS.
+This is an ansible playbook for automatically applying CIS Security Benchmarks to a **pre-production** system running Ubuntu 20.04 LTS and 22.04 LTS.
 
 ### What are these benchmarks?
 
@@ -22,7 +22,9 @@ For full details and caveats, refer to the [notes](NOTES.md).
 
 ![http://media.giphy.com/media/7U1XfwZ94okRW/giphy.gif](http://media.giphy.com/media/7U1XfwZ94okRW/giphy.gif)
 
-**Don't run this blindly on an actively running system.** The playbook will make **_serious_** modifications to your system that could affect its availability.
+**Don't run this on an actively running system. Deploy only on pre-production systems.**
+
+The playbook will make **_serious_** modifications to your system that could affect its availability.
 
 #### Basic operation
 
